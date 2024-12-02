@@ -2,11 +2,13 @@
 import { Colors } from '@/constants/Colours';
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
-
+import { useRouter } from 'expo-router';
 
 
 export default function Signup() {
     const [inputFocused, setInputFocused] = useState(false);
+    const router = useRouter();
+    console.log(router); 
 
 
 
@@ -49,7 +51,7 @@ export default function Signup() {
                     onFocus={() => setInputFocused(true)}
                     onBlur={() => setInputFocused(false)}
                 />
-                <TouchableOpacity style={styles.button} onPress={() => { }}>
+                <TouchableOpacity style={styles.button}  onPress={() => router.push('/(tabs)/reward')}>
                     <Text style={styles.buttonText}>Let's Go!</Text>
                 </TouchableOpacity>
             </View>
@@ -72,8 +74,8 @@ const styles = StyleSheet.create({
         fontFamily: 'Waveahaus-Bold'
     },
     logo: {
-        width: "35%",
-        height: "8%",
+        width: "40%",
+        height: "9%",
         marginBottom: 15
     },
     formContainer: {

@@ -16,7 +16,6 @@ export default function Index() {
     return () => clearTimeout(timer);
   }, [router]);
 
-
   return (
     <SafeAreaView style={styles.safeArea}>
       <StatusBar barStyle="light-content" backgroundColor={Colors.aftersColors.pinkColor} />
