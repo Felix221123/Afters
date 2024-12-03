@@ -19,7 +19,7 @@ export default function Profile() {
         { id: 1, title: "Hyde Park - Picnic", location: "London", people: 8 },
         { id: 2, title: "Hyde Park - Picnic", location: "London", people: 8 },
         { id: 3, title: "Hyde Park - Picnic", location: "London", people: 8 },
-        { id: 3, title: "Hyde Park - Picnic", location: "London", people: 8 },
+        { id: 4, title: "Hyde Park - Picnic", location: "London", people: 8 },
 
     ];
 
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         paddingTop: 10,
         width: "100%",
-        height: 300,
+        height: "auto",
         gap: 5
     },
     favoriteImage: {
@@ -161,10 +161,10 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     favoriteTextContainer: {
-        flex: 1,
+        // flex: 1,
         padding: 10,
         gap: 5,
-        justifyContent: "center",
+        // justifyContent: "center",
     },
     favoriteTitle: {
         fontSize: 16,

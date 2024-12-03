@@ -25,8 +25,8 @@ export default function TabLayout() {
                         backgroundColor: Colors.aftersColors.blackColor,
                         borderTopLeftRadius: 20,
                         borderTopRightRadius: 20,
-                        height: 88,
-                        paddingTop: 25
+                        height: 75,
+                        paddingTop: 15
                     },
                     default: {
                         position: 'absolute',
@@ -34,8 +34,8 @@ export default function TabLayout() {
                         backgroundColor: Colors.aftersColors.blackColor,
                         borderTopLeftRadius: 20,
                         borderTopRightRadius: 20,
-                        height: 88,
-                        paddingTop: 25
+                        height: 75,
+                        paddingTop: 15
                     },
                 }),
                 tabBarLabelStyle: {
