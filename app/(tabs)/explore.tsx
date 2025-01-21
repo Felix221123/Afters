@@ -12,9 +12,18 @@ import {
 } from "react-native";
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import { useRouter } from 'expo-router';
+
+
 
 export default function Explore() {
     // const windowWidth = Dimensions.get("window").width;
+    const router = useRouter();    // Initialize the router
+
+    // handling navigation function
+    const handleNavigation = () => {
+        router.push("../start");
+    };
 
     return (
         <SafeAreaView style={styles.container}>
@@ -35,7 +44,7 @@ export default function Explore() {
                 </View>
 
                 {/* Action Button Section */}
-                <TouchableOpacity style={styles.actionButton}>
+                <TouchableOpacity style={styles.actionButton} onPress={() => handleNavigation()}>
                     <MaterialIcons name="arrow-forward-ios" size={65} color="white" />
                 </TouchableOpacity>
 
@@ -86,15 +95,15 @@ const styles = StyleSheet.create({
         fontSize: 51,
         color: Colors.aftersColors.blackColor, // Black color
         fontFamily: 'Bungee-Regular', // Update to your custom font if needed
-        lineHeight: 48,
+        lineHeight:53,
     },
     highlightText: {
         color: Colors.aftersColors.yellowColor, // Yellow color for "BACK"
     },
     actionButton: {
-        marginTop: 70,
-        width: 129,
-        height: 129,
+        marginTop: 50,
+        width: 110,
+        height: 110,
         margin: "auto",
         borderRadius: 100,
         backgroundColor: Colors.aftersColors.blackColor, // Black button
@@ -114,6 +123,7 @@ const styles = StyleSheet.create({
     graphicContainer: {
         position: "relative",
         marginBottom: 100,
+        marginTop: 20
     },
     graphicImage: {
         width: "100%",

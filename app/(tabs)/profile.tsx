@@ -25,7 +25,7 @@ export default function Profile() {
 
     return (
         <SafeAreaView style={styles.container}>
-            <ScrollView contentContainerStyle={styles.scrollContainer}>
+            {/* <ScrollView contentContainerStyle={styles.scrollContainer}> */}
                 {/* Profile Header Section */}
                 <View style={styles.header}>
                     <View style={styles.avatarContainer}>
@@ -79,7 +79,7 @@ export default function Profile() {
                         <Ionicons name="copy-outline" size={15} color="black" />
                     </TouchableOpacity>
                 </View>
-            </ScrollView>
+            {/* </ScrollView> */}
 
         </SafeAreaView>
     );
