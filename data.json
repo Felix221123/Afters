@@ -2,40 +2,40 @@
   {
       "id": 1,
       "name": "Carlotta",
-      "description": "A suave, elegant homage to Italian tradition, whether that be a trattoria in Palermo, Sicily, or a family-run ristorante in Oakland, New Jersey. Carlotta pays tribute to Italians who brought their recipes and heritage across the pond, creating a wealth of new Italian cultures.",
+      "description": "A suave, elegant homage to Italian tradition, whether that be a trattoria in Palermo, Sicily, or a family-run ristorante in Oakland, New Jersey. ",
       "address": {
         "street": "77-78 Marylebone High St",
         "city": "London",
         "postcode": "W1U 5JX",
         "country": "United Kingdom"
       },
-      "price": "£20",
+      "price": "20",
       "website": "https://www.bigmammagroup.com/en/trattorias/carlotta"
   },
   {
       "id": 2,
       "name": "Fallow",
-      "description": "Fallow is a London-based restaurant renowned for its innovative approach to modern British and European cuisine, emphasizing sustainability and bold flavors. The menu features underutilized ingredients, reflecting a commitment to reducing food waste and promoting conscious gastronomy.",
+      "description": "Fallow is a London-based restaurant renowned for its innovative approach to modern British and European cuisine, emphasizing sustainability and bold flavors. The menu features underutilized ingredients.",
       "address": {
         "street": "52 Haymarket",
         "city": "London",
         "postcode": "SW1Y 4RP",
         "country": "United Kingdom"
       },
-      "price": "£20",
+      "price": "20",
       "website": "https://fallowrestaurant.com/"
   },
   {
       "id": 3,
       "name": "Hide",
-      "description": "Hide is a Michelin-starred restaurant and bar by Hedonism Wines and Ollie Dabbous, set over three floors with natural daylight and views across Green Park. It offers refined yet relaxed dining, showcasing modern British cuisine with a focus on high-quality ingredients and innovative presentation.",
+      "description": "Hide is a Michelin-starred restaurant and bar by Hedonism Wines and Ollie Dabbous, set over three floors with natural daylight and views across Green Park. It offers refined yet relaxed dining.",
       "address": {
         "street": "85 Piccadilly",
         "city": "London",
         "postcode": "W1J 7NB",
         "country": "United Kingdom"
       },
-      "price": "£20",
+      "price": "20",
       "website": "https://hide.co.uk/"
   }
 ]
