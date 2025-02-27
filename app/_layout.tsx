@@ -36,6 +36,7 @@ export default function RootLayout() {
       <Stack.Screen name="loading" options={{ headerShown: false }} />
       <Stack.Screen name="choice" options={{ headerShown: false }} />
       <Stack.Screen name="instruction" options={{ headerShown: false }} />
+      <Stack.Screen name="complete" options={{ headerShown: false }} />
       <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
     </Stack>
   )

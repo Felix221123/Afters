@@ -30,18 +30,26 @@ const SCALE_FACTOR = 1.1; // Scale factor for active card
 export default function Choice() {
     const router = useRouter();
     const scrollX = useRef(new Animated.Value(0)).current;
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState<number>(0);
 
     useEffect(() => {
-        console.log(activeIndex, ' is the active');
-        
+        console.log(activeIndex, ' is the active index');
     }, [activeIndex]);
 
+    // Handle navigation when clicking a specific card
+    const handleCardPress = (index: number) => {
+        setActiveIndex(index);
+        router.push({
+            pathname: "./instruction",
+            params: { index: index.toString() }
+        });
+    };
 
-    // handle navigation to instruction page
+
+    // handle navigation to the complete page
     const handleNavigation = () => {
         console.log("Navigation triggered");
-        router.push("./instruction");
+        router.push("./complete");
     }
 
     return (
@@ -86,24 +94,26 @@ export default function Choice() {
                         });
 
                         return (
-                            <Animated.View style={[styles.card, { transform: [{ scale }] }]}>
-                                <Image
-                                    source={require("@/assets/images/river.png")} // Placeholder image
-                                    style={styles.image}
-                                />
-                                <View style={styles.cardContent}>
-                                    <Text style={styles.cardTitle}>{item.name}</Text>
-                                    <Text style={styles.cardDescription}>{item.description}</Text>
-                                    <View style={styles.iconRow}>
-                                        <MaterialIcons name="location-on" size={20} color="white" />
-                                        <Text style={styles.cardInfo}>{item.address.street}, {item.address.city}</Text>
+                            <TouchableOpacity onPress={() => handleCardPress(index)}>
+                                <Animated.View style={[styles.card, { transform: [{ scale }] }]}>
+                                    <Image
+                                        source={require("@/assets/images/river.png")} // Placeholder image
+                                        style={styles.image}
+                                    />
+                                    <View style={styles.cardContent}>
+                                        <Text style={styles.cardTitle}>{item.name}</Text>
+                                        <Text style={styles.cardDescription}>{item.description}</Text>
+                                        <View style={styles.iconRow}>
+                                            <MaterialIcons name="location-on" size={20} color="white" />
+                                            <Text style={styles.cardInfo}>{item.address.street}, {item.address.city}</Text>
+                                        </View>
+                                        <View style={styles.iconRow}>
+                                            <MaterialIcons name="attach-money" size={20} color="white" />
+                                            <Text style={styles.cardInfo}>{item.price}</Text>
+                                        </View>
                                     </View>
-                                    <View style={styles.iconRow}>
-                                        <MaterialIcons name="attach-money" size={20} color="white" />
-                                        <Text style={styles.cardInfo}>{item.price}</Text>
-                                    </View>
-                                </View>
-                            </Animated.View>
+                                </Animated.View>
+                            </TouchableOpacity>
                         );
                     }}
                 />

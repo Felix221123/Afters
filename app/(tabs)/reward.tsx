@@ -37,7 +37,7 @@ export default function Reward() {
                     <View style={styles.checkmark}>
                         <Feather name="check" size={40} color="white" />
                     </View>
-                </View>
+                </View> 
             );
         }
         if (type === "gift") {
