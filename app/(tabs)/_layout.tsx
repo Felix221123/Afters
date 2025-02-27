@@ -15,13 +15,13 @@ export default function TabLayout() {
     return (
         <Tabs
             screenOptions={{
-                tabBarActiveTintColor: Colors.aftersColors.whiteColor, // Set active tint color
-                tabBarInactiveTintColor: 'gray', // Set inactive tint color
-                headerShown: false, // Hide headers
+                tabBarActiveTintColor: Colors.aftersColors.whiteColor, 
+                tabBarInactiveTintColor: 'gray', 
+                headerShown: false, 
                 tabBarShowLabel: false,
                 tabBarStyle: Platform.select({
                     ios: {
-                        position: 'absolute', // Make iOS tabs float
+                        position: 'absolute', 
                         backgroundColor: Colors.aftersColors.blackColor,
                         borderTopLeftRadius: 20,
                         borderTopRightRadius: 20,
@@ -30,7 +30,6 @@ export default function TabLayout() {
                     },
                     default: {
                         position: 'absolute',
-                        // Make Android tabs float
                         backgroundColor: Colors.aftersColors.blackColor,
                         borderTopLeftRadius: 20,
                         borderTopRightRadius: 20,
@@ -39,8 +38,8 @@ export default function TabLayout() {
                     },
                 }),
                 tabBarLabelStyle: {
-                    fontSize: 12, // Adjust the font size
-                    marginTop: 5, // Adjust spacing between icon and label
+                    fontSize: 12, 
+                    marginTop: 5, 
                 },
             }}>
             <Tabs.Screen

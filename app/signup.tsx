@@ -8,7 +8,6 @@ import { useRouter } from 'expo-router';
 export default function Signup() {
     const [inputFocused, setInputFocused] = useState(false);
     const router = useRouter();
-    console.log(router); 
 
 
 
